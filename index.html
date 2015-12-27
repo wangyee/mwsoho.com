@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MWSOHO.COM | Michael Wong, Chinese,love UX Design, a person love her girlfirend very much and wanna marry her ASAP!</title>
+<link rel="stylesheet" href="css/reset.css">
+<!-- CSS reset -->
+<link rel="stylesheet" herf="css/style.css">
+<!-- Resource style -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">-->
+<link rel="stylesheet" href="css/jquery.fullPage.min.css">
+<!-- fullpage component-->
+<!--[if lt IE 9]>
+
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <style media="screen">
+  .section1 {
+    background: url(img/Desktop_lgx.png) 50%;
+    background-origin: padding-box;
+    padding-top: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    }
+
+  .section4 {
+    background: url(img/home1.jpg) 50%;
+    background-origin: padding-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  </style>
+</head>
+<body>
+<nav id="target_nav" class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid container  bs-docs-sidebar">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"> <img alt="MWSOHO.COM" src="img/logo.svg" width="210px"> </a> </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul id="menu" class="nav navbar-nav navbar-right ">
+        <li data-menuanchor="home" class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+        <li data-menuanchor="about"><a href="#about">About</a></li>
+        <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+        <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+		</ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<div id="fullpage">
+  <!-- 第一屏-->
+  <div class="section section1 headline"> <h1 style="font-size:60px; text-align:center; padding-top: 180px;"> Michael Wong's <small>SOHO</small></h1>
+    <!-- <img alt="background" src="img/Desktop_lgx.png" width="100%" >  -->
+  </div>
+  <!-- 第二屏-->
+  <div class="section">
+    <div class="container">
+      <div id="left-side" class="col-lg-4 col-sm-4" > <img alt="" src="img/me-bg.png" width="100%" ></div>
+      <div id="right-side" class="col-lg-8 col-sm-8"  >
+        <div>
+          <h1>Michael Wong</h1>
+          <h2>Senior UX Designer Beijing, China</h2>
+          <p>Good professional UED skills. Team work spirit. High liability and Attribution. <br />
+            Strong willing to devote myself to study in User Experience area.</p>
+            <p>Michael has been working on user experience design fields for 9 years, specialized in interface design and user experience design, information architecture planning, experienced in mobile apps design, etc. Michael started his career in user experience design since 2007, he participated in FASP (Financial Accessing Service Platform) project design for China's Finance Ministry as a information architect and an UE designer. Now, he's continuously working on new product conception and UE design area, and also working on the training method of User Experience Design and Product Creative Design for employees from many different companies.
+</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- 第三屏-->
+  <div class="section">
+    <div class="slide">work1</div>
+    <div class="slide">work2</div>
+    <div class="slide">work3</div>
+    <div class="slide">work4</div>
+  </div>
+  <!-- 第四屏-->
+  <div class="section section4"></div>
+ </div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+        $(function(){
+        $('#fullpage').fullpage({
+            css3: true,
+            sectionsColor: ['#ffffff', '#ffffff', '#333333', '#333333'],
+            anchors: ['home', 'about', 'portfolio', 'contact'],
+            navigation: true,
+            navigationPosition: 'right',
+            navigationTooltips: ['home', 'about', 'portfolio', 'contact'],
+            resize:true,
+            menu:"#menu"
+          })
+        });
+
+  </script>
+</body>
+</html>
